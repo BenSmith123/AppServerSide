@@ -7,7 +7,7 @@ if ($http_origin == "http://127.0.0.1:51268")
     header('Access-Control-Allow-Origin: *');
     }
 
-$name = $_GET['name'];
+$name = $_POST['name'];
 
 if ($name == "ben"){
 	echo "name is ben!";
