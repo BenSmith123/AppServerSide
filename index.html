@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html>
 
-<header>
-</header>
+<?php 
 
-<body>
+$name = $_GET['name'];
 
-    <h1>Hello World!</h1>
+if ($name == "ben"){
+	echo "name is ben!";
+} else {
+	echo "didn't work :(";
+}
 
-	<p>
-	this is html text
-	<?php 
-	
-	// header("Content-Type: text/plain;charset=utf-8");
-	echo 'phptext!';
-	?>
-	</p>
-	
-</body>
-
-</html>
+// header("Content-Type: text/plain;charset=utf-8");
+echo 'phptext!';
+?>
