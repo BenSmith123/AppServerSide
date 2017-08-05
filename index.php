@@ -1,5 +1,8 @@
 <?php 
 //header("Content-Type: text/plain;charset=utf-8");
+
+phpinfo();
+
 $http_origin = $_SERVER['HTTP_ORIGIN'];
 
 if ($http_origin == "http://127.0.0.1:51268")
