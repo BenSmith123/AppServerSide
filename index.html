@@ -1,14 +1,18 @@
-
 <?php 
+//header("Content-Type: text/plain;charset=utf-8");
+$http_origin = $_SERVER['HTTP_ORIGIN'];
 
-$name = $_GET['name'];
-
-if ($name == "ben"){
-	echo "name is ben!";
-} else {
-	echo "didn't work :(";
+if ($http_origin == "http://127.0.0.1:51268")
+{ 
+	header('Access-Control-Allow-Origin: *');
 }
 
-// header("Content-Type: text/plain;charset=utf-8");
-echo 'phptext!';
+$name = $_POST['name'];
+
+if ($name == "ben"){
+	echo "name is ben! " . $name;
+} else {
+	echo "didn't work :( " . $name;
+}
+
 ?>
