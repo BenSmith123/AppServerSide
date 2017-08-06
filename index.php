@@ -2,6 +2,7 @@
 //header("Content-Type: text/plain;charset=utf-8");
 
 phpinfo();
+/*
 
 $http_origin = $_SERVER['HTTP_ORIGIN'];
 
