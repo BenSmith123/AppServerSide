@@ -1,8 +1,13 @@
 <?php 
 //header("Content-Type: text/plain;charset=utf-8");
 
-phpinfo();
-/*
+//phpinfo();
+
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Cache-Control: no-cache");
+header("Pragma: no-cache");
+
+
 
 $http_origin = $_SERVER['HTTP_ORIGIN'];
 
@@ -14,9 +19,9 @@ if ($http_origin == "http://127.0.0.1:51268")
 $name = $_POST['name'];
 
 if ($name == "ben"){
-	echo "name is ben! " . $name;
+	echo "name is ergerg! " . $name;
 } else {
-	echo "didn't work :( " . $name;
+	echo "didn't work :) " . $name;
 }
 
 ?>
