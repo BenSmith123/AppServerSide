@@ -21,7 +21,7 @@ $name = $_POST['name']; // inside post is the name of the variable being sent (c
 // process content on server
 
 if ($name == "ben"){
-	echo "Welcome to Electroball! " . $name;
+	echo "The server says hello :)";//$name;
 } else {
 	echo "Either server processing issue or connection" . $name;
 }
